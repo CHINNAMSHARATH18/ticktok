@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="m1z8Lp97vVuRh4vO4NYv6_LBM5c6Uvxmtj-rxaZ0IxA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techma - Welcome</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://techma.id/wp-content/uploads/2020/07/cropped-logo-Techma.png'); 
+            background-size: cover; 
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ... rest of your CSS styles ... */ 
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Techma</h1>
+        <p>Designed to transform you into a highly skilled Software Professional</p>
+
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="links">
+            <a href="#">Forgot your password?</a> 
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.querySelector('form');
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            // Here, you would typically make an AJAX request to your server
+            // to verify the login credentials.
+
+            // For demonstration purposes, let's simulate a successful login:
+            window.location.href = "dashboard.html"; // Redirect to the dashboard page
+        });
+    </script>
+
+</body>
+</html>
